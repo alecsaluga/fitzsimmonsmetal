@@ -606,10 +606,19 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            padding-left: var(--space-sm);
+            padding-right: var(--space-sm);
         }
 
         .hero-centered .hero-content {
             max-width: 900px;
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: clamp(36px, 9vw, 56px);
+                word-wrap: break-word;
+            }
         }
 
         .hero-centered .hero-subtitle {
